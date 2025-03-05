@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+// @ts-nocheck
+
+import DynamicForm from "./DynamicForm.svelte";
+import FetchData from "./FetchData.svelte";
+</script>
+
+<h1>Fetching API Data in Svelte 5</h1>
+<FetchData />
+
+<DynamicForm/>
