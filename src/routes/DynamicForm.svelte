@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { onMount } from "svelte";
     import { writable } from "svelte/store";
     let formFields: any = writable([{ id: 1, name: "", email: "" }]); // Initial field
 
@@ -26,7 +25,7 @@
     }
 </script>
 
-<h2>Dynamic Form in Svelte</h2>
+<h2>Dynamic Form allow user to add more fields on the go</h2>
 
 <form on:submit|preventDefault={handleSubmit}>
     {#each $formFields as field (field.id)}

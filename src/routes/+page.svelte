@@ -5,7 +5,7 @@ import DynamicForm from "./DynamicForm.svelte";
 import FetchData from "./FetchData.svelte";
 </script>
 
-<h1>Fetching API Data in Svelte 5</h1>
+<h1>This is mock API data called with fetching prop title and body</h1>
 <FetchData />
 
 <DynamicForm/>
