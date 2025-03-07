@@ -19,7 +19,6 @@
  
     function handleSubmit() {
         formFields.subscribe((fields : any) => {
-            console.log("Submitted Data:", fields);
         })(); // Unsubscribing immediately
         alert("Form submitted! Check console for data.");
     }
