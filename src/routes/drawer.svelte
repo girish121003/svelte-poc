@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { createEventDispatcher, onMount, onDestroy } from 'svelte';
+    import { base } from '$app/paths'
 
 	export let isOpen: boolean; // Controlled by the parent
 	const dispatch = createEventDispatcher();
@@ -36,19 +37,19 @@
 		><img src="close-btn.png" alt="Drawer Close Btn" /></button
 	>
 	<ul class="menu">
-		<li><a href="/"><img src="home-icon.png" alt="Home" /> Home</a></li>
-		<li><a href="/budget"><img src="budget-icon.png" alt="Budget" /> Plan Your Budget</a></li>
-		<li><a href="/reports"><img src="reports-icon.png" alt="Reports" /> Analytics & Reports</a></li>
-		<li><a href="/settings"><img src="settings-icon.png" alt="Settings" /> Settings</a></li>
+		<li><a href="#"><img src="home-icon.png" alt="Home" /> Home</a></li>
+		<li><a href="#"><img src="budget-icon.png" alt="Budget" /> Plan Your Budget</a></li>
+		<li><a href="#"><img src="reports-icon.png" alt="Reports" /> Analytics & Reports</a></li>
+		<li><a href="#"><img src="settings-icon.png" alt="Settings" /> Settings</a></li>
 		<li>
-			<a href="/assistance"
+			<a href="#"
 				><img src="assistance-icon.png" alt="User Assistance" /> User Assistance</a
 			>
 		</li>
 		<li>
-			<a href="/expenses"><img src="expenses-icon.png" alt="Expenses" /> Track Your Expenses</a>
+			<a href="#"><img src="expenses-icon.png" alt="Expenses" /> Track Your Expenses</a>
 		</li>
-		<li><a href="/summary"><img src="summary-icon.png" alt="Summary" /> Summary</a></li>
+		<li><a href="#"><img src="summary-icon.png" alt="Summary" /> Summary</a></li>
 	</ul>
 	<slot />
 </div>

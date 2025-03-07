@@ -13,7 +13,7 @@ const config = {
 		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
 		adapter: adapter({}),
 		paths: {
-			base: "/svelte-poc", // Set this if deploying to a subpath (e.g., GitHub Pages)
+			base: process.env.BASE_PATH || '/svelte-poc'  // Set this if deploying to a subpath (e.g., GitHub Pages)
 		  },
 		  appDir: "app"
 	}

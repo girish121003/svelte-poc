@@ -5,6 +5,7 @@ import DynamicForm from "./DynamicForm.svelte";
 import FetchData from "./FetchData.svelte";
 import Drawer from './drawer.svelte';
 import { tick } from 'svelte';
+import { base } from '$app/paths'
 let isHamburgerVisible = true;
 
 let isDrawerOpen = false;
@@ -41,11 +42,11 @@ function closeDrawer() {
 
 <header class="header">
     <div class="logo">
-    <img src="logo.png" alt="Budget Planner Logo" /> <!-- Replace URL in src -->
+    <img src="{base}/logo.png" alt="Budget Planner Logo" /> <!-- Replace URL in src -->
       <span class="title"><b>Budget</b> Planner</span>
     </div>
     <nav class="menu">
-      <button class="menu-icon" on:click={toggleDrawer} style="display: {isHamburgerVisible ? 'block' : 'none' };"><img src="hamburger.png" alt="Hamburger Menu" /> </button>
+      <button class="menu-icon" on:click={toggleDrawer} style="display: {isHamburgerVisible ? 'block' : 'none' };"><img src="{base}/hamburger.png" alt="Hamburger Menu" /> </button>
     </nav>
   </header>
   <main>
